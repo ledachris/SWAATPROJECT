@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SWAAT | STUDENT WORK & GUIDE APP TOOL</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= LOGIN PAGE ================= -->
+
+    <section id="loginPage" class="login-page">
+
+        <div class="login-brand">
+
+            <div class="brand">
+                <div class="brand-icon">🎓</div>
+
+                <div>
+                    <strong>SWAAT</strong>
+                    <span>STUDENT WORK & GUIDE APP TOOL</span>
+                </div>
+            </div>
+
+            <div class="hero-copy">
+
+                <span class="eyebrow">
+                    BUILT FOR UNIVERSITY LIFE
+                </span>
+
+                <h1>
+                    Study smarter.<br>
+                    <em>Score higher.</em>
+                </h1>
+
+                <p>
+                    Timetables, saved lecture documents, flashcards, quizzes,
+                    and study partner matching — all in one place.
+                </p>
+
+                <div class="feature-pills">
+                    <span>▣ Timetable</span>
+                    <span>▤ Lecture Documents</span>
+                    <span>ϟ Flashcards</span>
+                    <span>♧ Study Match</span>
+                    <span>▤ Modules</span>
+                    <span>✎ Notepad</span>
+                </div>
+
+            </div>
+            <details><summary>Author</summary>
+            DANIEL Mwedihanga
+            </details>
+            <small class="copyright">
+                © 2026 SWAAT — Built for students, by Daniel Edward Mwedihanga.
+            </small>
+
+        </div>
+
+
+        <div class="login-form-area">
+
+            <div class="login-card">
+
+                <h2>Welcome back</h2>
+
+                <p>
+                    Log in to continue your studies details
+                </p>
+
+                <label for="email">
+                    Student Email
+                </label>
+
+                <input
+                    id="email"
+                    type="email"
+                    value=""
+                    placeholder="example@gmail.com"
+                >
+
+
+                <label for="password">
+                    Password
+                </label>
+
+                <div class="password-wrap">
+
+                    <input
+                        id="password"
+                        type="password"
+                        value=""
+                        placeholder="Password"
+                    >
+
+                    <button
+                        type="button"
+                        id="togglePassword"
+                    >
+                        ◉
+                    </button>
+
+                </div>
+
+
+                <button
+                    class="primary-btn full"
+                    id="signInBtn"
+                >
+                    Sign In
+                </button>
+
+
+                <div class="create-account">
+
+                    New to SWAAT?
+
+                    <button id="createAccount">
+                        Create account
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= APPLICATION ================= -->
+
+    <section
+        id="appPage"
+        class="app-page hidden"
+    >
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+
+                <div class="brand-icon small">
+                    🎓
+                </div>
+
+                <strong>
+                    SWAAT
+                </strong>
+
+            </div>
+
+
+            <nav class="nav">
+
+                <button
+                    class="nav-item active"
+                    data-page="dashboard"
+                >
+                    <span>◎</span>
+                    Dashboard
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-page="timetable"
+                >
+                    <span>▣</span>
+                    Timetable
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-page="notes"
+                >
+                    <span>▤</span>
+                    Lecture Notes
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-page="flashcards"
+                >
+                    <span>ϟ</span>
+                    Flashcards & Quiz
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-page="notepad"
+                >
+                    <span>✎</span>
+                    Notepad
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-page="modules"
+                >
+                    <span>▥</span>
+                    My Modules
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-page="partner"
+                >
+                    <span>♧</span>
+                    Study Partner
+                </button>
+
+            </nav>
+
+
+            <div class="sidebar-user">
+
+                <div class="avatar" id="sidebarAvatar">ST</div>
+
+                <div>
+                    <strong id="sidebarUserName">Student</strong>
+                    <small id="sidebarUserCourse">Student account</small>
+                </div>
+
+            </div>
+
+
+            <button
+                class="signout"
+                id="signOut"
+            >
+                ↪ <span>Sign out</span>
+            </button>
+
+        </aside>
+
+
+
+        <!-- MAIN -->
+
+        <main class="main">
+
+            <header class="topbar">
+
+                <div></div>
+
+                <div class="top-actions">
+
+                    <button
+                        class="icon-btn"
+                        id="notifications"
+                    >
+                        ♧
+                    </button>
+
+                    <div class="avatar" id="topAvatar">ST</div>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- ================= DASHBOARD ================= -->
+
+            <section
+                class="page active"
+                id="dashboard"
+            >
+
+                <div class="quote-banner">
+
+                    <span>☆</span>
+
+                    <div>
+
+                        <strong>
+                            "Success is not final, failure is not fatal:
+                            it is the courage to continue that counts."
+                        </strong>
+
+                        <small>
+                            — Winston Churchill
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon purple">
+                            ▣
+                        </div>
+
+                        <strong>0</strong>
+
+                        <span>
+                            Classes Today
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon green">
+                            ▤
+                        </div>
+
+                        <strong>3</strong>
+
+                        <span>
+                            Active Modules
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon yellow">
+                            ϟ
+                        </div>
+
+                        <strong>4</strong>
+
+                        <span>
+                            Flashcards
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon pink">
+                            ♧
+                        </div>
+
+                        <strong>7 days</strong>
+
+                        <span>
+                            Uploaded Documents
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="two-col">
+
+                    <div class="panel">
+
+                        <div class="panel-head">
+
+                            <h3>
+                                Today's Schedule
+                            </h3>
+
+                            <button data-page-link="timetable">
+                                View all ›
+                            </button>
+
+                        </div>
+
+
+                        <div class="empty-state" id="dashboardSchedule">
+
+                            <div>◷</div>
+
+                            <p>
+                                No classes today — enjoy your day!
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="panel">
+
+                        <div class="panel-head">
+
+                            <h3>
+                                Module Progress
+                            </h3>
+
+                            <button data-page-link="modules">
+                                View all ›
+                            </button>
+
+                        </div>
+
+
+                        <div class="progress-list" id="dashboardProgress">
+
+                            <div>
+                                <div>
+                                    <span>CS301</span>
+                                    <small>68%</small>
+                                </div>
+
+                                <i>
+                                    <b style="width:68%"></b>
+                                </i>
+                            </div>
+
+
+                            <div>
+                                <div>
+                                    <span>ME202</span>
+                                    <small>45%</small>
+                                </div>
+
+                                <i>
+                                    <b style="width:45%"></b>
+                                </i>
+                            </div>
+
+
+                            <div>
+                                <div>
+                                    <span>MA301</span>
+                                    <small>82%</small>
+                                </div>
+
+                                <i>
+                                    <b style="width:82%"></b>
+                                </i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <h3 class="section-title">
+                    Quick Actions
+                </h3>
+
+
+                <div class="quick-grid">
+
+                    <button
+                        class="quick purple-card"
+                        data-page-link="notes"
+                    >
+                        <span>⇧</span>
+                        Upload Notes
+                    </button>
+
+
+                    <button
+                        class="quick orange-card"
+                        data-page-link="flashcards"
+                    >
+                        <span>ϟ</span>
+                        Study Flashcards
+                    </button>
+
+
+                    <button
+                        class="quick green-card"
+                        data-page-link="modules"
+                    >
+                        <span>▤</span>
+                        My Modules
+                    </button>
+
+
+                    <button
+                        class="quick pink-card"
+                        data-page-link="partner"
+                    >
+                        <span>♧</span>
+                        Find Partner
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= TIMETABLE ================= -->
+
+            <section
+                class="page"
+                id="timetable"
+            >
+
+                <div class="page-head">
+
+                    <div>
+                        <h2>Timetable</h2>
+                        <p>Your weekly class schedule</p>
+                    </div>
+
+                    <button
+                        class="primary-btn"
+                        id="addClassBtn"
+                    >
+                        ＋ Add Class
+                    </button>
+
+                </div>
+
+
+                <div class="days">
+
+                    <button
+                        class="day active"
+                        data-day="Monday"
+                    >
+                        Monday
+                    </button>
+
+                    <button
+                        class="day"
+                        data-day="Tuesday"
+                    >
+                        Tuesday
+                    </button>
+
+                    <button
+                        class="day"
+                        data-day="Wednesday"
+                    >
+                        Wednesday
+                    </button>
+
+                    <button
+                        class="day"
+                        data-day="Thursday"
+                    >
+                        Thursday
+                    </button>
+
+                    <button
+                        class="day"
+                        data-day="Friday"
+                    >
+                        Friday
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="scheduleList"
+                    class="schedule-list"
+                ></div>
+
+            </section>
+
+
+
+            <!-- ================= LECTURE NOTES ================= -->
+
+            <section
+                class="page"
+                id="notes"
+            >
+
+                <div class="page-head">
+
+                    <div>
+                        <h2>Lecture Notes</h2>
+                        <p>
+                            Upload and store your lecture documents for easy access
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="upload-box"
+                    id="uploadBox"
+                >
+
+                    <div class="upload-icon">
+                        ⇧
+                    </div>
+
+                    <h3>
+                        Upload your lecture documents here
+                    </h3>
+
+                    <p>
+                        PDF, DOC, DOCX or TXT · up to 50 MB
+                    </p>
+
+                    <button
+                        class="secondary-btn"
+                        id="browseBtn"
+                    >
+                        Browse Files
+                    </button>
+
+                    <input
+                        type="file"
+                        id="fileInput"
+                        hidden
+                        accept=".pdf,.doc,.docx,.txt"
+                    >
+
+                </div>
+
+
+                <div
+                    class="file-list"
+                    id="fileList"
+                >
+
+                    <div class="file-row">
+
+                        <div class="file-icon">
+                            ▤
+                        </div>
+
+                        <div class="file-info">
+
+                            <strong>
+                                Week3_DataStructures.pdf
+                            </strong>
+
+                            <small>
+                                2.4 MB
+                            </small>
+
+                        </div>
+
+                        <span class="ready">
+                            Stored
+                        </span>
+
+                        <button class="round play">
+                            ▶
+                        </button>
+
+                        <button class="round download">
+                            ↓
+                        </button>
+
+                    </div>
+
+
+                    <div class="file-row">
+
+                        <div class="file-icon">
+                            ▤
+                        </div>
+
+                        <div class="file-info">
+
+                            <strong>
+                                Thermodynamics_Lecture5.pdf
+                            </strong>
+
+                            <small>
+                                1.8 MB
+                            </small>
+
+                        </div>
+
+                        <span class="ready">
+                            Stored
+                        </span>
+
+                        <button class="round play">
+                            ▶
+                        </button>
+
+                        <button class="round download">
+                            ↓
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= FLASHCARDS ================= -->
+
+            <section
+                class="page"
+                id="flashcards"
+            >
+
+                <div class="page-head">
+
+                    <div>
+
+                        <h2>
+                            Flashcards & Quiz
+                        </h2>
+
+                        <p id="masteredText">
+                            1/4 mastered
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="primary-btn"
+                        id="newCardBtn"
+                    >
+                        ＋ New Card
+                    </button>
+
+                </div>
+
+
+                <div class="tabs">
+
+                    <button
+                        class="tab active"
+                        data-mode="cards"
+                    >
+                        Flashcards
+                    </button>
+
+                    <button
+                        class="tab"
+                        data-mode="quiz"
+                    >
+                        Quiz Mode
+                    </button>
+
+                </div>
+
+
+                <div id="quizPanel" class="quiz-panel hidden">
+                    <div class="quiz-topline">
+                        <strong id="quizProgress">Question 1</strong>
+                        <span id="quizScore">Score: 0</span>
+                    </div>
+                    <h3 id="quizQuestion">Your quiz question will appear here.</h3>
+                    <div id="quizOptions" class="quiz-options"></div>
+                    <p id="quizFeedback" class="quiz-feedback" aria-live="polite"></p>
+                    <div class="quiz-actions">
+                        <button class="primary-btn" id="quizNext" disabled>Next question</button>
+                        <button class="secondary-btn" id="quizRestart">Restart quiz</button>
+                    </div>
+                </div>
+
+                <div
+                    class="flashcard"
+                    id="flashcard"
+                >
+
+                    <span class="learning">
+                        Learning
+                    </span>
+
+                    <small>
+                        QUESTION
+                    </small>
+
+                    <h3 id="cardQuestion"></h3>
+
+                    <p id="cardAnswerHint">
+                        Tap to reveal answer
+                    </p>
+
+                    <div
+                        id="cardAnswer"
+                        class="card-answer hidden"
+                    ></div>
+
+                </div>
+
+
+                <div class="flash-controls">
+
+                    <button
+                        class="round big"
+                        id="prevCard"
+                    >
+                        ‹
+                    </button>
+
+                    <span id="cardCount">
+                        1 / 4
+                    </span>
+
+                    <button
+                        class="got-it"
+                        id="gotIt"
+                    >
+                        ✓ Got it
+                    </button>
+
+                    <button
+                        class="round"
+                        id="shuffle"
+                    >
+                        ⤨
+                    </button>
+
+                    <button
+                        class="round big"
+                        id="nextCard"
+                    >
+                        ›
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="card-list"
+                    id="cardList"
+                ></div>
+
+            </section>
+
+
+
+            <!-- ================= NOTEPAD ================= -->
+
+            <section
+                class="page"
+                id="notepad"
+            >
+
+                <div class="page-head">
+
+                    <div>
+
+                        <h2>
+                            Notepad
+                        </h2>
+
+                        <p>
+                            Keep quick study notes and ideas
+                            in one place
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="primary-btn"
+                        id="saveNote"
+                    >
+                        Save Note
+                    </button>
+
+                </div>
+
+
+                <div class="notepad-wrap">
+
+                    <input
+                        id="noteTitle"
+                        placeholder="Note title"
+                    >
+
+                    <textarea
+                        id="noteBody"
+                        placeholder="Start writing your notes..."
+                    ></textarea>
+
+                </div>
+
+
+                <div
+                    id="savedNotes"
+                    class="saved-notes"
+                ></div>
+
+            </section>
+
+
+
+            <!-- ================= MODULES ================= -->
+
+            <section
+                class="page"
+                id="modules"
+            >
+
+                <div class="page-head">
+                    <div>
+                        <h2>My Modules</h2>
+                        <p>Track your academic progress</p>
+                    </div>
+                    <button class="primary-btn" id="addModuleBtn">＋ Add Module</button>
+                </div>
+                <div class="module-grid" id="moduleGrid"></div>
+
+            </section>
+
+
+
+            <!-- ================= STUDY PARTNER ================= -->
+
+            <section
+                class="page"
+                id="partner"
+            >
+
+                <div class="page-head">
+
+                    <div>
+
+                        <h2>
+                            Study Partner
+                        </h2>
+
+                        <p>
+                            Find students who match your
+                            study goals
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <h3 class="section-subtitle">Find students</h3>
+                <div class="partner-grid" id="partnerGrid"></div>
+                <h3 class="section-subtitle">Connection requests</h3>
+                <div class="request-grid" id="requestGrid"></div>
+
+            </section>
+
+        </main>
+
+    </section>
+
+
+
+    <div id="registerModal" class="modal hidden">
+        <div class="modal-card">
+            <button class="modal-close" id="closeRegister">×</button>
+            <h2>Create your SWAAT account</h2>
+            <label for="registerName">Full name</label>
+            <input id="registerName" maxlength="100" autocomplete="name" placeholder="Your full name">
+            <label for="registerEmail">Email address</label>
+            <input id="registerEmail" type="email" maxlength="254" autocomplete="email" placeholder="you@example.com">
+            <label for="registerPassword">Password</label>
+            <input id="registerPassword" type="password" minlength="8" maxlength="128" autocomplete="new-password" placeholder="At least 8 characters">
+            <label for="registerCourse">Course or programme</label>
+            <input id="registerCourse" maxlength="80" placeholder="e.g. Computer Science">
+            <button class="primary-btn full" id="submitRegister">Create account</button>
+        </div>
+    </div>
+
+    <div id="moduleModal" class="modal hidden">
+        <div class="modal-card">
+            <button class="modal-close" id="closeModule">×</button>
+            <h2 id="moduleModalTitle">Add Module</h2>
+            <label for="moduleCode">Module code</label>
+            <input id="moduleCode" maxlength="30" placeholder="e.g. PAP521S">
+            <label for="moduleName">Module name</label>
+            <input id="moduleName" maxlength="120" placeholder="Programming In Practice">
+            <label for="moduleProgramme">Programme / department</label>
+            <input id="moduleProgramme" maxlength="120" placeholder="Computer Science">
+            <label for="moduleProgress">Progress (%)</label>
+            <input id="moduleProgress" type="number" min="0" max="100" value="0">
+            <button class="primary-btn full" id="saveModule">Save module</button>
+        </div>
+    </div>
+
+    <div id="cardModal" class="modal hidden">
+        <div class="modal-card">
+            <button class="modal-close" id="closeCard">×</button>
+            <h2 id="cardModalTitle">New Flashcard</h2>
+            <label for="editCardQuestion">Question</label>
+            <textarea id="editCardQuestion" maxlength="500" placeholder="Enter the question"></textarea>
+            <label for="editCardAnswer">Answer</label>
+            <textarea id="editCardAnswer" maxlength="5000" placeholder="Enter the answer"></textarea>
+            <button class="primary-btn full" id="saveCard">Save flashcard</button>
+        </div>
+    </div>
+
+    <!-- ================= ADD CLASS MODAL ================= -->
+
+    <div
+        id="classModal"
+        class="modal hidden"
+    >
+
+        <div class="modal-card">
+
+            <button
+                class="modal-close"
+                id="closeModal"
+            >
+                ×
+            </button>
+
+            <h2>
+                Add Class
+            </h2>
+
+            <input
+                id="className"
+                placeholder="Class name"
+            >
+
+            <input
+                id="classLecturer"
+                placeholder="Lecturer · Room"
+            >
+
+            <input
+                id="classTime"
+                type="time"
+                value="08:00"
+            >
+
+            <button
+                class="primary-btn full"
+                id="saveClass"
+            >
+                Add to timetable
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- TOAST -->
+
+    <div
+        id="toast"
+        class="toast"
+    ></div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
