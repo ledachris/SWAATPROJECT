@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SWAAT Student Work & Guide App
 
 SWAAT is a Node.js/Express student productivity app with SQLite storage, document uploads, student accounts and an administrator dashboard.
@@ -109,3 +110,6 @@ and the person must authenticate with its own password.
 
 Do not place passwords or JWT secrets in source control, screenshots, or chat.
 If a password has been exposed, change it before deploying.
+=======
+# SWAATPROJECT
+>>>>>>> 8e6b1a6cebedd3ae1806b0be902055bf0325c32c
